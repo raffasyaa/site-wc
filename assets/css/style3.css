@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #121212;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.5);
+}
+.login-card {
+    background: rgba(44, 40, 40, 0.85);
+    border-radius: 10px;
+    width: 80%;
+    padding: 25px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+.login-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #ffffffa4;
+}
+.login-card h1 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #67ff01;
+}
+.login-card p {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    color: #dddddd;
+}
+/* Gaya Umum untuk Input */
+.login-input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #07c5df;
+    border-radius: 5px;
+    background: #222;
+    color: #ffffff;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.3s;
+    box-sizing: border-box;  /* Menambahkan box-sizing untuk menghindari input overflow */
+}
+
+
+.login-input:focus {
+    border-color: #ffffff;
+}
+.login-button {
+    width: 100%;
+    font-size: 15px;
+    padding: 13px;
+    background: #07c5df;
+    color: #ffffff;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.login-button:hover {
+    background-color: #cc0000;
+}
+.footer {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #888;
+}
