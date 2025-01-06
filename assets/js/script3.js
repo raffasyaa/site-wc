@@ -1,5 +1,5 @@
-const correctUsername = "skartivpn";
-const correctPassword = "@skt86!";
+const correctUsername = "skarti";
+const correctPassword = "sktvpn";
 
 function login() {
     const username = document.getElementById("username").value;
