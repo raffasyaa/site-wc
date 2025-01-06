@@ -1,60 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skarti VPN - Home</title>
-    <link rel="stylesheet" href="assets/css/style1.css">
+    <title>Login | Panel WildCard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style3.css">
     <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/raffasyaa/semvak-subs@aba9692d3f6655a01eda995984821d0444e219b4/template-01/images/marzban.png" />
-
 </head>
 <body>
+    <video class="background-video" autoplay loop>
+        <source src="https://e.top4top.io/m_3123yxry20.mp4" type="video/mp4">
+    </video>
 
-    <section class="hero">
-        <div class="container">
-            <h1>Selamat Datang di SKARTI VPN</h1>
-            <p>Kenyamanan dan keperluan Anda adalah prioritas kami. Nikmati layanan VPN dengan WildCard .</p>
-            <a href="wildcard.html" class="btn btn-primary">Lihat Domain WildCard</a>
-        </div>
-    </section>
+    <div class="login-card">
+        <img src="https://cdn.jsdelivr.net/gh/raffasyaa/semvak-subs@aba9692d3f6655a01eda995984821d0444e219b4/template-01/images/marzban.png" alt="SkartiVPN">
+        <h1>Panel Login</h1>
+        <input type="text" id="username" class="login-input" placeholder="Username">
+        <input type="password" id="password" class="login-input" placeholder="Password">
+        <button class="login-button" onclick="login()">Masuk</button>
+        <p class="footer">Lupa password? Hubungi <a href="https://t.me/SaputraTech" style="color: #0066ff;">@SaputraTech</a>.</p>
+    </div>
 
-    <section class="features">
-        <div class="container">
-            <h2>Kenapa Memilih SKARTI VPN?</h2>
-            <div class="features-grid">
-                <div class="feature-item">
-                    <i class="icon-speed"></i>
-                    <h3>Kecepatan Maksimal</h3>
-                    <p>Rasakan kecepatan tinggi tanpa hambatan untuk kebutuhan sehari-hari.</p>
-                </div>
-                <div class="feature-item">
-                    <i class="icon-lock"></i>
-                    <h3>Privasi Terjamin</h3>
-                    <p>Data Anda aman bersama kami. Kami tidak menyimpan log aktivitas Anda.</p>
-                </div>
-                <div class="feature-item">
-                    <i class="icon-support"></i>
-                    <h3>Support 24/7</h3>
-                    <p>Tim kami siap membantu kapan saja untuk mendukung kebutuhan Anda.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <p>© 2025 SKARTI VPN. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script>
-        // Periksa apakah pengguna sudah login (gunakan sessionStorage atau token)
-        const isLoggedIn = sessionStorage.getItem("loggedIn");
-    
-        if (!isLoggedIn) {
-            // Jika belum login, redirect ke halaman login
-            window.location.href = "index.html";
-        }
-    </script>
+    <script src="assets/js/script3.js"></script>
 </body>
 </html>
