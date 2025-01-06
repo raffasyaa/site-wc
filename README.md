@@ -1,6 +1,5 @@
-# 🔒 **Panel WildCard** - Login System
+# 🔒 **Domain WildCard** - SKARTI STORE
 
-Panel WildCard adalah sistem login yang sederhana dan aman dengan desain modern.
 ---
 
 ## 🚀 **Fitur**
