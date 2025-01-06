@@ -1,14 +1,1 @@
-const correctUsername = "skartivpn";
-const correctPassword = "@skt86!";
-
-function login() {
-    const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
-
-    if (username === correctUsername && password === correctPassword) {
-        alert("Login berhasil!");
-        window.location.href = "index.html";
-    } else {
-        alert("Web aja nolak apalagi cewek, Silakan coba lagi.");
-    }
-}
+const _0xbbadbc=_0x2b10;(function(_0x251c81,_0x5f10e8){const _0x1de1a=_0x2b10,_0x220cb3=_0x251c81();while(!![]){try{const _0x46e72c=parseInt(_0x1de1a(0xa5))/0x1+parseInt(_0x1de1a(0xb0))/0x2+-parseInt(_0x1de1a(0xb2))/0x3*(parseInt(_0x1de1a(0xa2))/0x4)+parseInt(_0x1de1a(0xa4))/0x5+parseInt(_0x1de1a(0xa1))/0x6*(parseInt(_0x1de1a(0xb3))/0x7)+parseInt(_0x1de1a(0xad))/0x8+-parseInt(_0x1de1a(0xac))/0x9;if(_0x46e72c===_0x5f10e8)break;else _0x220cb3['push'](_0x220cb3['shift']());}catch(_0x1e44eb){_0x220cb3['push'](_0x220cb3['shift']());}}}(_0x8c3c,0x63e3f));const correctUsername=_0xbbadbc(0xa7),correctPassword=_0xbbadbc(0xaa);function _0x2b10(_0x1be861,_0x3457d3){const _0x8c3ca2=_0x8c3c();return _0x2b10=function(_0x2b1090,_0x254f47){_0x2b1090=_0x2b1090-0xa1;let _0x41be7c=_0x8c3ca2[_0x2b1090];return _0x41be7c;},_0x2b10(_0x1be861,_0x3457d3);}function _0x8c3c(){const _0x4f46ec=['1325622SCRCjQ','4ExuaRe','value','2950970UnHALG','478417gCEOyS','location','skartivpn','Login\x20berhasil!','password','@skt86!','href','10768032MZGNAH','2497360inzKUl','Web\x20aja\x20nolak\x20apalagi\x20cewek,\x20Silakan\x20coba\x20lagi.','getElementById','449210WjLNwL','index.html','1987794rsVCxa','21EqagOX'];_0x8c3c=function(){return _0x4f46ec;};return _0x8c3c();}function login(){const _0x25ae21=_0xbbadbc,_0x178938=document['getElementById']('username')[_0x25ae21(0xa3)],_0x3365d8=document[_0x25ae21(0xaf)](_0x25ae21(0xa9))[_0x25ae21(0xa3)];_0x178938===correctUsername&&_0x3365d8===correctPassword?(alert(_0x25ae21(0xa8)),window[_0x25ae21(0xa6)][_0x25ae21(0xab)]=_0x25ae21(0xb1)):alert(_0x25ae21(0xae));}
