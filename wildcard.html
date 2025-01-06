@@ -15,7 +15,7 @@
         <h3>LIST DOMAIN WILDCARD</h3>
     </header>
     <main>
-<br>
+        <br>
         <!-- Centered Back to Home Button -->
         <div class="container">
             <button class="btn-back" onclick="window.location.href='dash.html';">Back to Home</button>
@@ -117,6 +117,9 @@
                 </div>
             </div>
             <!-- Tambahkan server lainnya sesuai kebutuhan -->
+            <div class="container">
+            <button class="btn-back" onclick="logout()">Logout</button>
+        </div>
         </div>
     </main>
     <footer class="footer">
@@ -125,7 +128,26 @@
         </div>
     </footer>
     <script src="assets/js/script2.js"></script>
+    <script>
+        // Periksa apakah pengguna sudah login (gunakan sessionStorage atau token)
+        const isLoggedIn = sessionStorage.getItem("loggedIn");
+    
+        if (!isLoggedIn) {
+            // Jika belum login, redirect ke halaman login
+            window.location.href = "index.html";
+        }
+    </script>
 
+
+    <script>
+        function logout() {
+            // Menghapus status login
+            sessionStorage.removeItem("loggedIn");
+    
+            // Redirect ke halaman login
+            window.location.href = "index.html";
+        }
+    </script>
 </body>
 
 </html>

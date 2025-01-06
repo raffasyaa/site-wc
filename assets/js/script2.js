@@ -1,1 +1,38 @@
-(function(_0x51c8ad,_0x155518){const _0x5b8786=_0x3adc,_0x440afe=_0x51c8ad();while(!![]){try{const _0x32ab48=parseInt(_0x5b8786(0x137))/0x1*(parseInt(_0x5b8786(0x138))/0x2)+parseInt(_0x5b8786(0x13c))/0x3*(-parseInt(_0x5b8786(0x148))/0x4)+parseInt(_0x5b8786(0x147))/0x5*(parseInt(_0x5b8786(0x133))/0x6)+parseInt(_0x5b8786(0x134))/0x7*(parseInt(_0x5b8786(0x13a))/0x8)+parseInt(_0x5b8786(0x13f))/0x9+parseInt(_0x5b8786(0x131))/0xa+-parseInt(_0x5b8786(0x135))/0xb*(parseInt(_0x5b8786(0x14e))/0xc);if(_0x32ab48===_0x155518)break;else _0x440afe['push'](_0x440afe['shift']());}catch(_0x25ae1e){_0x440afe['push'](_0x440afe['shift']());}}}(_0x4825,0x581c9));function _0x4825(){const _0xaeb317=['removeChild','textarea','value','classList','body','contains','25YJNwnV','244JPjsjo','remove','show','then','getElementById','execCommand','2666364BiAdpW','clipboard','createElement','Gagal\x20menyalin\x20teks:','274910YqwqUo','error','206286WWLJWa','1752401nXCccD','11ywmVbr','appendChild','2AMnbVA','554592taUTvX','textContent','8mptJwe','add','28053jueAAx','innerText','Domain\x20berhasil\x20disalin!','1342638iUNcYO','copy'];_0x4825=function(){return _0xaeb317;};return _0x4825();}function _0x3adc(_0x431f08,_0x24557f){const _0x4825ed=_0x4825();return _0x3adc=function(_0x3adc1c,_0x437692){_0x3adc1c=_0x3adc1c-0x12e;let _0x5be66f=_0x4825ed[_0x3adc1c];return _0x5be66f;},_0x3adc(_0x431f08,_0x24557f);}function toggleConfig(_0x4fa226,_0x195597){const _0x5c8a55=_0x3adc,_0x2ae0fc=document['getElementById'](_0x4fa226);_0x2ae0fc[_0x5c8a55(0x144)][_0x5c8a55(0x146)]('show')?(_0x2ae0fc[_0x5c8a55(0x144)][_0x5c8a55(0x149)]('show'),_0x195597[_0x5c8a55(0x139)]='Show\x20Domain'):(_0x2ae0fc['classList'][_0x5c8a55(0x13b)](_0x5c8a55(0x14a)),_0x195597[_0x5c8a55(0x139)]='Hide\x20Domain');}function copyText(_0x35b3ff){const _0xdf3b50=_0x3adc,_0x470458=document[_0xdf3b50(0x14c)](_0x35b3ff),_0x1d7177=_0x470458[_0xdf3b50(0x139)]||_0x470458[_0xdf3b50(0x13d)];if(navigator[_0xdf3b50(0x12e)])navigator[_0xdf3b50(0x12e)]['writeText'](_0x1d7177)[_0xdf3b50(0x14b)](()=>{const _0x756956=_0xdf3b50;alert(_0x756956(0x13e));})['catch'](_0xde9536=>{const _0x4bca0d=_0xdf3b50;console[_0x4bca0d(0x132)](_0x4bca0d(0x130),_0xde9536);});else{const _0x2eee92=document[_0xdf3b50(0x12f)](_0xdf3b50(0x142));_0x2eee92[_0xdf3b50(0x143)]=_0x1d7177,document[_0xdf3b50(0x145)][_0xdf3b50(0x136)](_0x2eee92),_0x2eee92['select']();try{document[_0xdf3b50(0x14d)](_0xdf3b50(0x140)),alert(_0xdf3b50(0x13e));}catch(_0x1d9aab){console['error'](_0xdf3b50(0x130),_0x1d9aab);}document['body'][_0xdf3b50(0x141)](_0x2eee92);}}
+function toggleConfig(configId, buttonElement) {
+    const configElement = document.getElementById(configId);
+
+    // Toggle the 'show' class to animate the appearance or disappearance of the configuration
+    if (configElement.classList.contains('show')) {
+        configElement.classList.remove('show');
+        buttonElement.textContent = 'Show Domain'; // Change button text to "Tampilkan Domain"
+    } else {
+        configElement.classList.add('show');
+        buttonElement.textContent = 'Hide Domain'; // Change button text to "Sembunyikan Domain"
+    }
+}
+
+// Fungsi untuk menyalin teks konfigurasi ke clipboard
+function copyText(elementId) {
+    const textElement = document.getElementById(elementId);
+    const text = textElement.textContent || textElement.innerText;
+
+    if (navigator.clipboard) {
+        navigator.clipboard.writeText(text).then(() => {
+            alert('Domain berhasil disalin!');
+        }).catch(err => {
+            console.error('Gagal menyalin teks:', err);
+        });
+    } else {
+        const textarea = document.createElement('textarea');
+        textarea.value = text;
+        document.body.appendChild(textarea);
+        textarea.select();
+        try {
+            document.execCommand('copy');
+            alert('Domain berhasil disalin!');
+        } catch (err) {
+            console.error('Gagal menyalin teks:', err);
+        }
+        document.body.removeChild(textarea);
+    }
+}
