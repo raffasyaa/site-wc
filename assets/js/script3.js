@@ -1,1 +1,14 @@
-const _0xd176a9=_0x43bd;(function(_0x4f63c6,_0x29af37){const _0x303514=_0x43bd,_0x35f81f=_0x4f63c6();while(!![]){try{const _0x3a8945=parseInt(_0x303514(0x70))/0x1*(parseInt(_0x303514(0x67))/0x2)+parseInt(_0x303514(0x69))/0x3+parseInt(_0x303514(0x79))/0x4*(-parseInt(_0x303514(0x6d))/0x5)+-parseInt(_0x303514(0x71))/0x6*(-parseInt(_0x303514(0x6f))/0x7)+parseInt(_0x303514(0x74))/0x8*(parseInt(_0x303514(0x6c))/0x9)+parseInt(_0x303514(0x72))/0xa+-parseInt(_0x303514(0x76))/0xb*(parseInt(_0x303514(0x7a))/0xc);if(_0x3a8945===_0x29af37)break;else _0x35f81f['push'](_0x35f81f['shift']());}catch(_0x1ec660){_0x35f81f['push'](_0x35f81f['shift']());}}}(_0x205e,0x2634f));const correctUsername=_0xd176a9(0x75),correctPassword=_0xd176a9(0x73);function _0x43bd(_0x22c8e8,_0x2cff38){const _0x205e1b=_0x205e();return _0x43bd=function(_0x43bd74,_0x1ea865){_0x43bd74=_0x43bd74-0x67;let _0x3f124e=_0x205e1b[_0x43bd74];return _0x3f124e;},_0x43bd(_0x22c8e8,_0x2cff38);}function _0x205e(){const _0x2326a2=['password','9uVPbto','49845bcJvRO','href','791rEnRmh','1dNjbvz','2274XxmHjf','1176150aeDWOL','konoha','1482208RXvhso','skartivpn','6752735LIkMwh','dash.html','Web\x20aja\x20nolak\x20apalagi\x20cewek,\x20Silakan\x20coba\x20lagi.','8ZdqMGO','12ZgvHdr','location','562934ipEIjb','getElementById','489399EPjAMB','value'];_0x205e=function(){return _0x2326a2;};return _0x205e();}function login(){const _0x4860e3=_0xd176a9,_0x5b8a93=document[_0x4860e3(0x68)]('username')['value'],_0x2715bc=document[_0x4860e3(0x68)](_0x4860e3(0x6b))[_0x4860e3(0x6a)];_0x5b8a93===correctUsername&&_0x2715bc===correctPassword?(alert('Login\x20berhasil!'),window[_0x4860e3(0x7b)][_0x4860e3(0x6e)]=_0x4860e3(0x77)):alert(_0x4860e3(0x78));}
+const correctUsername = "skartivpn";
+const correctPassword = "konoha";
+
+function login() {
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+
+    if (username === correctUsername && password === correctPassword) {
+        alert("Login berhasil!");
+        window.location.href = "dash.html";
+    } else {
+        alert("Web aja nolak apalagi cewek, Silakan coba lagi.");
+    }
+}
