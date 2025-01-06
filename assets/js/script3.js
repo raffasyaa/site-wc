@@ -1,14 +1,1 @@
-const correctUsername = "skarti";
-const correctPassword = "sktvpn";
-
-function login() {
-    const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
-
-    if (username === correctUsername && password === correctPassword) {
-        alert("Login berhasil!");
-        window.location.href = "dash.html";
-    } else {
-        alert("Web aja nolak apalagi cewek, Silakan coba lagi.");
-    }
-}
+function _0x411c(_0x50729f,_0x13bbbf){const _0x331d63=_0x331d();return _0x411c=function(_0x411cbe,_0x4d744e){_0x411cbe=_0x411cbe-0x112;let _0x17c6fa=_0x331d63[_0x411cbe];return _0x17c6fa;},_0x411c(_0x50729f,_0x13bbbf);}const _0x41f951=_0x411c;(function(_0x5de7d7,_0xdec5c4){const _0x2d6ea0=_0x411c,_0x4334e7=_0x5de7d7();while(!![]){try{const _0x5c88ec=parseInt(_0x2d6ea0(0x116))/0x1*(parseInt(_0x2d6ea0(0x112))/0x2)+parseInt(_0x2d6ea0(0x11a))/0x3*(-parseInt(_0x2d6ea0(0x118))/0x4)+-parseInt(_0x2d6ea0(0x11e))/0x5+parseInt(_0x2d6ea0(0x11c))/0x6+-parseInt(_0x2d6ea0(0x115))/0x7*(parseInt(_0x2d6ea0(0x120))/0x8)+-parseInt(_0x2d6ea0(0x11d))/0x9*(-parseInt(_0x2d6ea0(0x11f))/0xa)+-parseInt(_0x2d6ea0(0x117))/0xb*(parseInt(_0x2d6ea0(0x122))/0xc);if(_0x5c88ec===_0xdec5c4)break;else _0x4334e7['push'](_0x4334e7['shift']());}catch(_0x27d176){_0x4334e7['push'](_0x4334e7['shift']());}}}(_0x331d,0x8b694));const correctUsername=_0x41f951(0x11b),correctPassword=_0x41f951(0x113);function login(){const _0x3be9c5=_0x41f951,_0x25b1c9=document[_0x3be9c5(0x119)]('username')['value'],_0x26fd9d=document[_0x3be9c5(0x119)](_0x3be9c5(0x114))['value'];_0x25b1c9===correctUsername&&_0x26fd9d===correctPassword?(alert(_0x3be9c5(0x121)),window[_0x3be9c5(0x123)]['href']='dash.html'):alert('Web\x20aja\x20nolak\x20apalagi\x20cewek,\x20Silakan\x20coba\x20lagi.');}function _0x331d(){const _0x25b5fc=['Login\x20berhasil!','1440096oHztlM','location','34934myoSrk','sktvpn','password','112kyYXfG','57xHecZG','44lMYICq','650020iFDaBt','getElementById','6KimubP','skarti','2924058mMdklq','73782pscPcW','179250oQUgTC','530jtdVsQ','252768kbCblG'];_0x331d=function(){return _0x25b5fc;};return _0x331d();}
